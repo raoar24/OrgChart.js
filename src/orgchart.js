@@ -1,6 +1,7 @@
 export default class OrgChart {
   constructor(options) {
     this._name = 'OrgChart';
+    /* eslint no-extend-native: ["error", { "exceptions": ["Promise"] }] */
     Promise.prototype.finally = function (callback) {
       let P = this.constructor;
 
